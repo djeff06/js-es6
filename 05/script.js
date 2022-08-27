@@ -15,3 +15,8 @@ console.log(salary) // 4000
 console.log(details) // {format: 'Full-Time', experience: 4}
 
 */
+const { title, salary, ...details } = job
+
+console.log('title: ', title)
+console.log('salary: ', salary)
+console.log('details: ', details)
