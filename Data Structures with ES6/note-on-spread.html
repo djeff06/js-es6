@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+
+<body>
+  <p>Check the console</p>
+  <script>
+    let state = { count: 0, loading: true, trials: 10 }
+    const newState = { count: 13, loading: false, trials: state.trials + 1 }
+
+    console.log({ ...state, ...newState }) //{ count : 13, loading: false, trials : 11 }
+    console.log({ ...newState, ...state }) //{ count : 0, loading : true, trials : 10 }
+  </script>
+</body>
+
+</html>

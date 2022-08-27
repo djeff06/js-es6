@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Property Shorthand</title>
+</head>
+
+<body>
+  <p>Check the console</p>
+
+  <script>
+    let name = 'John Doe';
+    let email = 'john.doe@example.com';
+    let age = 24;
+
+    // Old
+    //let user = {
+    //  name: name,
+    //  email: email,
+    //  age: age
+    // };
+
+    // New
+    let user = { name, email, age };
+
+    console.log(user)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring statement</title>
+</head>
+
+<body>
+  <p>Check the console</p>
+  <script>
+    const obj = {
+      age: 10,
+      balance: 20.2,
+      name: "user"
+    }
+    // const age = obj.age // age = 10
+    // const balance = obj.balance // balance = 20.2
+    // const name = obj.name // name = "user"
+
+    // With destructuring statement
+    const { age, balance, name } = obj
+
+    console.log('Name: ', name)
+    console.log('Age: ', age)
+    console.log('Balance: ', balance)
+  </script>
+</body>
+
+</html>

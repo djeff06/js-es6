@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>let</title>
+</head>
+
+<body>
+  <p>Check the console</p>
+
+  <script>
+    function foo() {
+      let a = 10
+      {
+        let a = 123
+        console.log('from block scope: a = ', a) // 123
+      }
+      console.log('from function scope: a = ', a) // 10
+    }
+    foo()
+  </script>
+</body>
+
+</html>
